@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       const regex = /^[A-Z]/;
+
+       function isFirstLetterUpperCase(str){
+           return regex.test(str);
+       }
+
+       let words =[
+           "Abhbnbhmm",
+           "ldsjkdsdjn",
+           "Blaslkdisk"
+       ]
+
+       for(let w of words){
+           if (isFirstLetterUpperCase(w)) console.log("'" + w + "'" + " is    started with an uppercase charracter")
+           else console.log("\"" + w + "\"" + " is not started with an uppercase charracter")
+       }
+   </script>
+
+</body>
+</html>
